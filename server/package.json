@@ -1,0 +1,20 @@
+{
+  "name": "aurora-finsight-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Aurora FinSight API (Express, SQLite for development, PostgreSQL for production)",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "migrate": "node src/db/migrate-cli.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test --test-concurrency=1 \"test/*.test.js\""
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.13.0",
+    "zod": "^3.25.0"
+  }
+}

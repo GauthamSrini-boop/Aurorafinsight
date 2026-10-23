@@ -1,0 +1,12 @@
+node_modules/
+client/dist/
+server/data/
+*.db
+*.db-shm
+*.db-wal
+.env
+.env.*
+!.env.example
+e2e/shots/
+*.log
+.DS_Store

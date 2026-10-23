@@ -1,0 +1,6 @@
+**/node_modules
+client/dist
+server/data
+e2e
+.git
+*.log
